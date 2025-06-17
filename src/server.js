@@ -4,7 +4,6 @@ import { connectDB } from "./config/mongoose.js";
 
 const port = process.env.PORT || 5000;
 
-
 const bootstrap = async () => {
   await connectDB();
   app.listen(port, () => {
